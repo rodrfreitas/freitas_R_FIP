@@ -10,6 +10,12 @@
 	margin: 0;
 }
 
+.box-color-light {
+	background: #FFF1E8;
+	border: 1px solid #9C2801;
+	margin: 0;
+}
+
 /*basic reset*/
 
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
@@ -18,6 +24,11 @@ div,p,body,header,footer,section,article,nav {
 	margin: 0; 
 	padding: 0; 
 }	
+
+a {
+    text-decoration: none;
+ }
+
 
 img { 
 	border: none; /*Remove border if image is a link*/
@@ -29,7 +40,7 @@ img {
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 /* Remove underlines from links */
@@ -67,28 +78,55 @@ you work on and the intended audience */
 }
 
 #header-con {
-	background-color: #ddd;
+	background-color: #FFF1E8;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	/* position: fixed;
+	top:0; */
 }
 
 #header-box1 {
 	grid-column: 1/3;
 	/* Remove as content will dictate height */
 	height: 80px;
-}
-
-#main-nav {
-	grid-column: 3/11;
-	/* Remove as content will dictate height */
-	height: 80px;
+	width: 220px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #header-box2 {
-	grid-column: 11/-1;
+	grid-column: 3/10;
 	/* Remove as content will dictate height */
 	height: 80px;
 }
+
+#main-nav{
+	grid-column: 10/-1;
+	/* Remove as content will dictate height */
+	height: 80px;
+	margin-bottom:10px;
+}
+
+#main-nav ul {
+	margin-top: 35px;
+	margin-left: 30px;
+	padding:0;
+	text-align: right;
+ }
+ 
+ #main-nav li {
+	display:inline;
+	margin-left: 28px;
+	font-size: 28px;
+	
+ }
+
+/* look for an element that already has the class 'active' attached to it*/
+#main-nav li a.active {
+	color: #DD9933;
+	font-weight: bold;
+ }
+ 
 
 /* Specific to index page desktop  */
 
@@ -102,10 +140,50 @@ you work on and the intended audience */
 	height: 582px;
 }
 
+#hero-text p {
+	color: #666666;
+	margin-bottom: 20px;
+	margin-right: 80px;
+	font-size: 22px;
+	line-height: 32px;
+}
+
+
+#hero-text h1 {
+	color: #9C2801;
+	font-size: 48px;
+}
+
 #hero-image {
 	grid-column: 8/-1;
 	/* Remove as content will dictate height */
 	height: 582px;
+	border: solid #9C2801;
+	border-left-width: 8px;
+	border-bottom-width: 8px;
+	border-top-width: 0;
+	border-right-width: 0;
+}
+
+/* #hero-image-box {
+	grid-column: 8/-1;
+	height: 582px;
+	background-color: #9C2801;
+	position: relative;
+	top: -568px;
+	left: -12px;
+	z-index: -1;
+} */
+
+#hero-button {
+	width: 20%;
+	margin-top: 15px;
+	padding: 12px 20px;
+	font-size: 18px;
+	color: #f9f9f9;
+	background-color: #9C2801;
+	border: none;
+	cursor:pointer;
 }
 
 #products {
@@ -116,44 +194,100 @@ you work on and the intended audience */
 #products h2 {
 	grid-column: 1/-1;
 	text-align: center;
+	color: #9C2801;
+	font-size: 48px;
 }
+
+#products p {
+	font-size: 24px;
+	margin-top: 20px;
+	margin-right: 20px;
+	line-height: 34px;
+	color: #666666;
+}
+
+#products h3 {
+	color: #303030;
+	font-weight: bold;
+}
+
+.product-button {
+	width: 25%;
+	margin-top: 15px;
+	padding: 12px 20px;
+	font-size: 18px;
+	color: #f9f9f9;
+	background-color: #9C2801;
+	border: none;
+	cursor:pointer;
+}
+
+/* .product-box {
+	background-color: #FFF1E8;
+} */
 
 #product1 {
 	grid-column: 1/5;
 	/* Remove as content will dictate height */
-	height: 507px;
+	height: 412px;
 }
 
 #product2 {
 	grid-column: 5/9;
 	/* Remove as content will dictate height */
-	height: 507px;
+	height: 412px;
 }
 
 #product3 {
 	grid-column: 9/-1;
 	/* Remove as content will dictate height */
-	height: 507px;
+	height: 412px;
 }
 
-.product-box {
-	background-color: #ddd;
-}
+
 
 #about-con {
-	background-color: #ddd;
+	background-color: #9C2801;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
 #about-title {
 	text-align: center;
+	color: #9C2801;
+	font-size: 48px;
+	margin-top: 155px;
 }
 
 #about-text {
 	grid-column: 1/8;
 	/* Remove as content will dictate height */
 	height: 700px;
+}
+
+#about-text h1 {
+	color: #f9f9f9;
+	font-size: 48px;
+	margin-top: 100px;
+}
+
+#about-text p {
+	color: #f9f9f9;
+	margin-bottom: 20px;
+	margin-right: 80px;
+	font-size: 22px;
+	line-height: 32px;
+}
+
+#about-button {
+	width: 20%;
+	margin-top: 15px;
+	padding: 12px 20px;
+	font-size: 18px;
+	color: #9C2801;
+	background-color: #FFF1E8;
+	border: none;
+	cursor:pointer;
 }
 
 #about-image {
@@ -164,7 +298,7 @@ you work on and the intended audience */
 
 #contact {
 	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom: -38px;
 }
 
 #contact-text {
@@ -173,16 +307,66 @@ you work on and the intended audience */
 	height: 700px;
 }
 
+#contact-text h1 {
+	color: #9C2801;
+	font-size: 48px;
+	text-align: left;
+}
+
+#contact-text p {
+	color: #666666;
+	margin-bottom: 20px;
+	margin-right: 80px;
+	font-size: 22px;
+	line-height: 32px;
+	text-align: left;
+}
+
 #contact-form {
 	grid-column: 8/-1;
 	/* Remove as content will dictate height */
-	height: 700px;
+	margin-top: 50px;
+	height: 455px;
+}
+
+#contact-form input[type=text]{
+	display: block;
+	padding: 12px 20px;
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	width: 88%;
+	font-size: 18px;
+	font-weight: lighter;
+	border: 1px solid #9C2801;
+}
+
+#contact-form textarea{
+	display: block;
+	padding: 12px 20px;
+	padding-bottom: 80px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	width: 88%;
+	font-size: 18px;
+	border: 1px solid #9C2801;
+}
+
+#contact-form input[type=submit]{
+	width: 30%;
+	margin-left: 20px;
+	padding: 12px 20px;
+	font-size: 18px;
+	color: #f9f9f9;
+	background-color: #9C2801;
+	border: none;
 }
 
 /*Common page elements  */
 
 #footer-con {
-	background-color: #aaaaaa;
+	background-color: #5B2400;
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
@@ -190,20 +374,44 @@ you work on and the intended audience */
 #footer-logo {
 	grid-column: 1/3;
 	/* Remove as content will dictate height */
-	height: 80px;
+	height: 132px;
 }
 
-#footer-nav {
-	grid-column: 3/-1;
-	/* Remove as content will dictate height */
-	height: 80px;
-	margin-bottom: 100px;
-}
+
+
 
 #footer-newsletter1 {
 	grid-column: 1/5;
 	/* Remove as content will dictate height */
-	height: 80px;
+	height: 120px;
+}
+
+#footer-newsletter1 p {
+	color: #f9f9f9;
+	font-size: 22px;
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+/* NEWSLETTER FORM SETTINGS */
+
+
+#newsletter-form input[type=text]{
+	padding: 12px 20px;
+	text-align: left;
+	width: 50%;
+	font-size: 18px;
+	border: none;
+}
+
+#newsletter-form input[type=submit]{
+	width: 30%;
+	margin-left: 8px;
+	padding: 12px 20px;
+	font-size: 18px;
+	color: #f9f9f9;
+	background-color: #9C2801;
+	border: none;
 }
 
 #footer-newsletter2 {
@@ -212,20 +420,50 @@ you work on and the intended audience */
 	height: 80px;
 }
 
-#footer-social {
+#footer-nav {
 	grid-column: 11/-1;
 	/* Remove as content will dictate height */
 	height: 80px;
 }
 
+#footer-nav ul {
+	margin-top: 55px;
+	margin-left: 30px;
+	padding:0;
+	text-align: right;
+ }
+ 
+ #footer-nav li {
+	display:inline;
+	margin-left: 28px;
+	font-size: 28px;
+	
+ }
 
+ #footer-nav li a {
+	text-decoration: none;
+	color: white;
+
+ }
 
 /* gallery page */
 
 #gallery-hero-con {
 	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/1920x580");
+	background: url("../images/hero-gallery-01.jpg");
 	height: 580px;
+}
+
+.hero-gallery-overlay {
+	position:relative;
+}
+
+.hero-gallery-overlay:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 #gallery-text {
@@ -233,7 +471,22 @@ you work on and the intended audience */
 	/* Remove as content will dictate height */
 	height: 200px;
 	margin-top: 100px;
+	z-index: 0;
 }
+
+
+#gallery-text h2{
+	font-size: 48px;
+	text-align: left;
+	color: #f9f9f9;
+}
+
+#gallery-text p{
+	font-size: 22px;
+	text-align: left;
+	color: #f9f9f9;
+}
+
 
 #gallery-controls {
 	margin-top: 200px;
@@ -249,17 +502,43 @@ you work on and the intended audience */
 	width: 30px;
 	border-radius: 50%;
 	margin: 5px;
+	z-index: 0;
   }
 
 #gallery h2 {
 	grid-column: 1/-1;
 	text-align: center;
+	color: #9C2801;
+	font-size: 48px;
+	margin-top: 110px;
   }
 
+#gallery p {
+	font-size: 24px;
+	margin-top: 20px;
+	margin-right: 20px;
+	line-height: 34px;
+	color: #666666;
+}
+
+#gallery h3 {
+	color: #303030;
+	font-weight: bold;
+}
+
 .gallery-box {
-	background-color: #ddd;
+	
 	grid-column: span 4 / span 4;
 	/* Remove as content will dictate height */
-	height: 507px;
+	
+	height: 407px;
 	margin-bottom: 20px;
 }
+
+.gallery-box img {
+	transition: transform .2s;
+}
+
+.zoom:hover {
+	transform: scale(1.4); 
+  }
