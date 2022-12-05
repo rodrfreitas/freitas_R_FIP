@@ -2,74 +2,112 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Autumn Wanderer :: Mobile Home</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
 </head>
 <!-- students must convert divs to semantic tags -->
 <body>
 	<div id="container">
         
-        <div id="header-con">
+        <header id="header-con">
             <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
-                 <div id="mobile-nav">
-                    <span class="burger"></span>
-                    <span class="burger"></span>
-                    <span class="burger"></span>
-                 </div>
+                <img src="images/logo.svg" alt="Autumn Wanderer Logo" id="header-logo">
+                 <nav id="mobile-nav">
+                    <a href="gallery_mobile.html">
+                        <span class="burger"></span>
+                        <span class="burger"></span>
+                        <span class="burger"></span>
+                    </a>
+                </nav>
             </div>    
-        </div> 
+        </header>
 
         <main>
             <div id="hero-con">
                 <div class="grid-con">
-                    <div id="hero-text" class="box-color">
-                    </div>
+                    <section id="hero-text">
+                        <h2 class="hidden">Welcome Information</h2>
+                        <h1>I wander around the world so you can see the best photos of the season</h1>
+                        <p>Welcome to my site! Here I show the best photos of the season, I take them by myself while walking, and show them to the world.</p>
+                        <p>They are all taken in nature. Some I took while I was walking. Most of all I want to share with the people who love the outdoors.</p>
+                        <p>Here you will find all my photos, all the information, and all about nature and its beauty of it! Please enjoy!</p>
+                        <button id="hero-button">Read Story</button>  
+                    </section>
                 </div>
             </div>
 
             <div id="image-slider-con">
-                <h2>Blandit At Tuctor</h2>
-                <img src="https://via.placeholder.com/428x240" alt="image">
+                <h2>Autumn is special</h2>
+                <img src="images/mobile/article-mb.jpg" alt="park bench">
                 <!-- ascii symbols for <> -->
-                <span id="mobile-slider-left">&#60</span>
-                <span id="mobile-slider-right">&#62</span>
+                <span id="mobile-slider-left">&#60;</span>
+                <span id="mobile-slider-right">&#62;</span>
+                <h3>Enjoy the peace</h3>
+                <p>Like no other season, autumn is the perfect time to go outside, sit and relax.</p>
+                <button class="product-button">Read More</button>
             </div>
 
             <div id="about-us-con">
-                <h2>Blandit At Tuctor</h2>   
+                <h2>Enjoy the outdoors</h2>   
                     <div id="about-us-text-con">     
                         <div class="grid-con">
-                            <div id="about-us-text" class="box-color">
-                            </div>
+                            <section id="about-us-text">
+                                <h2 class="hidden">About Us</h2>
+                                <h1>The time of year to go out and explore</h1>
+                                <p>Autumn and parks are special places for us, and I am always looking for new places to visit. I have always loved the parks and the beautiful autumn weather. It's the perfect time of year for me to go out and explore.</p>
+                                <p>There are many different things to do, and you will have the feeling that you have found a new appreciation for the great outdoors.</p>
+                                <button class="about-button">Visit our Gallery</button>
+                            </section>
                         </div>      
                     </div>  
-                    <div class="grid-con" id="about-us-photos">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                        <img src="https://via.placeholder.com/350x350" alt="image" class="about-us-photo">
-                    </div>         
+                    <section class="grid-con" id="about-us-photos">
+                        <h2 class="hidden">Photo examples</h2>
+                        <img src="images/mobile/preview1-mb.png" alt="red tree" class="about-us-photo">
+                        <img src="images/mobile/preview2-mb.png" alt="water fun" class="about-us-photo">
+                        <img src="images/mobile/preview3-mb.png" alt="bike" class="about-us-photo">
+                        <img src="images/mobile/preview4-mb.png" alt="ducks" class="about-us-photo">
+                    </section>         
             </div>
 
-            <div id="contact-us-con">
+            <section id="contact-us-con">
+                <h2 class="hidden">Contact section</h2>
                 <div class="grid-con">
-                    <div id="contact-text" class="box-color">
-                    </div>
-                    <div id="contact-form" class="box-color">
-                    </div>
+                    <section id="contact-text">
+                        <h2>Feel free to contact us</h2>
+                        <p>Send a message to us if you want to send us a note. We will reply to your message.</p>
+                        <p>Thank you for your support!</p>
+                    </section>
+                    <section id="contact-form" class="box-color-light">
+                        <h3 class="hidden">Contact Us Form</h3>
+                        <form action="index.html" method="POST" enctype="text/plain">
+                        <input name="fullName" type="text" placeholder="Name">
+                        <input name="subject" type="text" placeholder="Subject">
+                        <input name="contactInfo" type="text" required placeholder="Email">
+                        <textarea name="msg" placeholder="Message..."></textarea>
+                        <input name="submit" type="submit" value="Send">
+                    </form>
+                    </section>
                 </div>
-            </div>
+            </section>
         </main>
 
-        <div id="footer-con">
+        <footer id="footer-con">
             <div class="grid-con">
                 <div id="footer-box">
+                    <img src="images/logo_white.svg" alt="Autumn Wanderere Logo" width="180">
                 </div>
                 <div id="footer-newsletter">
+                    <p>Newsletter - Sign-up</p>
+                    <section id="newsletter-form">
+                        <h2 class="hidden">Newsletter Form</h2>
+                        <form action="index.html" method="POST" enctype="text/plain">
+                            <input name="contactInfo" type="text" required placeholder="Email">
+                            <input name="submit" type="submit" value="Sign-up">
+                        </form>
+                    </section>
                 </div>
             </div>
-        </div>
+        </footer>
 
     </div>
 </body>
