@@ -2,28 +2,33 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Autumn Wanderer :: Gallery Home</title>
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <!-- students must convert divs to semantic tags -->
 	<div id="container">
         
-        <div id="header-con">
+        <header id="header-con">
             <div id="main-header" class="grid-con">
-                <img src="https://via.placeholder.com/186x80" alt="image" id="header-logo">
-                 <div id="mobile-nav">
-                    <span class="burger"></span>
-                    <span class="burger"></span>
-                    <span class="burger"></span>
-                 </div>
+                <img src="images/logo.svg" alt="Autumn Wanderer Logo" id="header-logo">
+                 <nav id="mobile-nav">
+                    <a href="index_mobile.html">
+                        <span class="burger"></span>
+                        <span class="burger"></span>
+                        <span class="burger"></span>
+                    </a>
+                 </nav>
             </div>    
-        </div> 
+        </header> 
 
         <main>
             <div id="hero-gallery-con">
                 <div class="grid-con">
-                    <div id="hero-gallery-text" class="box-color">
+                    <div id="hero-gallery-text">
+                        <h2 class="hidden">Gallery Information</h2>
+                        <h1>Welcome to my photo gallery</h1>
+                        <p>I will post about my daily life, my family, the things I like to do, or the interesting things that happened to me. Please feel free to leave comments, suggestions, questions, etc.</p>
                     </div>
                     <div id="gallery-controls">
                         <span class="dot"></span>
@@ -34,38 +39,57 @@
             </div>
 
             <div class="grid-con" id="gallery">
-                <h2>Blandit At Tuctor</h2>
+                <h2>2022 - Gibbons Park - London/Ontario</h2>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
+                    <img src="images/mobile/gallery-mb-01.jpg" width="388" alt="image">
+                    <h3>Red tree</h3>
+                    <p>A beautiful autumn tree.</p>
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
+                    <img src="images/mobile/gallery-mb-02.jpg" width="388" alt="image">
+                    <h3>Park bridge</h3>
+                    <p>Sometimes nature blends perfectly with the city landscape.</p>
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
+                    <img src="images/mobile/gallery-mb-03.jpg" width="388" alt="image">
+                    <h3>Sunshine</h3>
+                    <p>Sunshine and trees.</p>
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
+                    <img src="images/mobile/gallery-mb-04.jpg" width="388" alt="image">
+                    <h3>Fence</h3>
+                    <p>A fence protecting a garden.</p>
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
+                    <img src="images/mobile/gallery-mb-05.jpg" width="388" alt="image">
+                    <h3>Someone jogging</h3>
+                    <p>Someone jogging in the park.</p>
                 </div>
                 <div class="gallery-box">
-                    <img src="https://via.placeholder.com/388x242" alt="image">
+                    <img src="images/mobile/gallery-mb-06.jpg" width="388" alt="image">
+                    <h3>Park bench</h3>
+                    <p>You can almost feel how fresh the air must be. Isn't?</p>
                 </div>
             </div>              
         </main>
 
-        <div id="footer-con">
+        <footer id="footer-con">
             <div class="grid-con">
                 <div id="footer-box">
+                    <img src="images/logo_white.svg" alt="Autumn Wanderere Logo" width="180">
                 </div>
                 <div id="footer-newsletter">
-                </div>
-                <div id="footer-newsletter2">
+                    <p>Newsletter - Sign-up</p>
+                    <section id="newsletter-form">
+                        <h2 class="hidden">Newsletter Form</h2>
+                        <form action="index.html" method="POST" enctype="text/plain">
+                            <input name="contactInfo" type="text" required placeholder="Email">
+                            <input name="submit" type="submit" value="Sign-up">
+                        </form>
+                    </section>
                 </div>
             </div>
-        </div>
+        </footer>
     </div> 
 </body>
 </html>
